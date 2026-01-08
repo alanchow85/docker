@@ -9,4 +9,5 @@ def hello_world():
 
 if __name__ == '__main__':
     # This block is useful for local testing without Gunicorn
-    app.run(host='0.0.0.0')
+    app.run()
+
