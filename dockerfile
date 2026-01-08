@@ -20,6 +20,7 @@ EXPOSE 8000
 ENV NAME World
 
 # Run gunicorn when the container launches
-CMD ["gunicorn", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
 # Format for CMD is "gunicorn [options] [module_name]:[app_instance_name]"
+
 
